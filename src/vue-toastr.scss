@@ -31,7 +31,7 @@ $green: #51A351;
 $red: #BD362F;
 $blue: #2F96B4;
 $orange: #F89406;
-$default-container-opacity: .8;
+$default-container-opacity: .9;
 
 // Styles
 .toast-title {
@@ -154,6 +154,28 @@ button.toast-close-button {
 		 @include boxShadow(0 0 12px $grey);
 		color: $white;
 		 @include opacity($default-container-opacity);
+
+		> i.icon{
+			position: absolute;
+			top: 50%;
+			left: 5px;
+			margin-top: -15px;
+			font-size: 30px;
+			width: 40px;
+			text-align: center;
+		}
+
+		i.icon.glyphicons:before {
+			padding: 0;
+		}
+
+		i.toast-close{
+			color: $white;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			font-size: 16px;
+		}
 	}
 
 	> :hover {
